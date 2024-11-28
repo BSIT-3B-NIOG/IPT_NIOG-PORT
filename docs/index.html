@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="main">
+        <!--start of navigation button-->
+        <div class="navbar"> 
+            <a href = "#"><img src = "imgs/th-removebg-preview.png" class ="logo"></a>
+
+            <ul>
+                <li><a href = #>Home</a></li>
+                <li><a href = #>About</a></li>
+                <li><a href = #>My portfolio</a></li>
+                <li><a href = #>Contact Me</a></li>
+
+            </ul>
+        </div>
+        <!--end of navigation button-->
+
+
+        <!-- Information of kevin start here-->
+        <div class="info">
+            <h3> Hi, Im <span>Kevin Kim Niog</h3>
+            <h1><span>W</span>eb <span>D</span>eveloper</h1>
+            <h3>Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit.<br> Fugit possimus ipsam ex perspiciatis facere.</h3>
+            <a href="#">invite me</a>
+        </div>
+
+        <!-- Information of kevin end here-->
+
+        <!--modification of Image start here-->
+
+        <div class="image">
+            <img src = "imgs/kevin-removebg-preview.png" alt = "">
+        </div>
+
+
+
+         <!--modification of Image End here-->
+
+         <!--social media icons start here-->
+        <div class="icons">
+            <a href="https://www.facebook.com/kevinkimniog/photos_by"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.youtube.com/watch?v=Z141h5Wucm0&list=RDfMmqh4Ut_Uo&index=8"><ion-icon name="logo-youtube"></ion-icon></a> 
+        </div>
+
+
+
+
+    </div>
+
+          <!--social media icons end here-->
+
+         
+
+    <!--start about here-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src = "imgs/464798034_9132996086719299_5279252896250305657_n-removebg-preview.png">
+                </div>
+
+                <div class ="about-col-2">
+                    <h1 class = "title">about me</h1>
+                    <p>“Hi, I’m Kevin Niog and I have been working in IT infrastructure for 7 years. I have expertise in web development using vanilla js and Angular and have worked on several successful projects that involved cloud computing and automation. I am passionate about user experience and constantly strive to create intuitive and engaging applications. My goal is to continue to develop my skills and work on projects that make a positive impact on society.” </p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-links" onclick= "opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick = "opentab('experienced')">Experience</p>
+                        <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                    </div>
+                
+
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>
+                            <li><span>web designing<br> </span>Designing web application</li><br>
+                            <li><span>System application<br></span>creating system architecture</li><br>
+                            <li><span>IT infrastructure<br></span>cloud integration using AWS </li><br>
+                        </ul>
+                    </div> 
+
+                    <div class="tab-contents" id ="experienced">
+                        <ul>
+                            <li><span>2020<br> </span>atteneo </li><br>
+                            <li><span>2021<br></span>Mapua</li><br>
+                            <li><span>2022<br></span>City of malabon</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>BSCS<br> </span>jose rizal university</li><br>
+                            <li><span>shorcourse ICT<br></span>International Electronics and technical institute</li><br>
+                            <li><span>BSIT<br></span>City of malabon university</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------END of ABOUT here--------------->
+
+
+<!------------------->
+
+
+    <script></script><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var content = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(contents of content){
+                contents.classList.remove("active-tab");
+            }
+        
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    </script>
+
+</body>
+</html>
